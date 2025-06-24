@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Offerings - Spark</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #ffffff;
+      color: #0f1120;
+    }
+
+    .navbar {
+      background-color: #0f1120;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #62e1e9;
+      font-size: 1.1em;
+    }
+
+    main {
+      padding: 40px 20px;
+      flex: 1;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #0652e9;
+    }
+
+    .services-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .service-card {
+      flex: 1 1 250px;
+      background-color: #f1f8ff;
+      padding: 30px 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+      max-width: 300px;
+    }
+
+    .service-card:hover {
+      transform: scale(1.03);
+      background-color: #e7f3ff;
+    }
+
+    .service-card h3 {
+      color: #0f1120;
+      font-size: 1.3em;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      color: #333;
+      font-size: 1em;
+      margin: 0 auto;
+    }
+
+    footer {
+      background-color: #0f1120;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: auto;
+    }
+
+    footer a {
+      color: #62e1e9;
+      text-decoration: none;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .services-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="./assets/Logo_T.png" alt="Logo" />
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="careers.html">Careers</a>
+      <a href="offerings.html">Offerings</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Our Services</h1>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>SaaS Platforms</h3>
+        <p>Custom-built cloud solutions tailored to business workflows.</p>
+      </div>
+      <div class="service-card">
+        <h3>Software Development</h3>
+        <p>Robust, scalable, and maintainable software systems.</p>
+      </div>
+      <div class="service-card">
+        <h3>UI/UX Design</h3>
+        <p>Responsive and engaging interfaces for modern users.</p>
+      </div>
+      <div class="service-card">
+        <h3>App Development</h3>
+        <p>Cross-platform mobile solutions for Android & iOS.</p>
+      </div>
+      <div class="service-card">
+        <h3>Web Hosting</h3>
+        <p>Fast, secure, and scalable hosting solutions.</p>
+      </div>
+      <div class="service-card">
+        <h3>Software Maintenance</h3>
+        <p>Ongoing updates, debugging and version control.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Contact: <a href="mailto:info@sparkdigital.com">info@sparkdigital.com</a> | +91 9876543210</p>
+  </footer>
+</body>
+</html>
