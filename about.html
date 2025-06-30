@@ -72,10 +72,10 @@
         border: 2px solid #62e1e9;
       }
 
-      /* NAVBAR STYLES (MATCHING INDEX) */
+      /* NAVBAR (solid background color) */
       .navbar {
-        background-color: #0f1120;
-        padding: 15px 30px;
+        background-color: #0f1120 !important;
+        background-image: none !important;
       }
 
       .nav-container {
@@ -142,7 +142,6 @@
         color: white;
       }
 
-      /* Hamburger menu for mobile */
       #menu-toggle {
         display: none;
       }
@@ -171,7 +170,6 @@
         }
       }
 
-      /* FOOTER */
       .site-footer {
         background: #0f1120;
         color: #f0f0f0;
@@ -247,19 +245,15 @@
         font-size: 0.85rem;
         color: #888;
       }
+      
     </style>
   </head>
   <body>
     <!-- NAVIGATION -->
-    <!-- NAVIGATION -->
     <header data-aos="fade-down">
       <nav class="navbar">
         <div class="nav-container">
-          <a
-            href="index.html"
-            class="nav-logo"
-            style="display: flex; gap: 10px; align-items: center"
-          >
+          <a href="index.html" class="nav-logo">
             <img src="./assets/LOGO1.png" alt="Spark Logo" />
             <div class="brand-text">
               <span class="brand-name">Spark Digital</span>
@@ -274,12 +268,14 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html" class="active">About Us</a></li>
             <li><a href="careers.html">Careers</a></li>
-            <li><a href="offerings.html">Offerings</a></li>
+            <li><a href="offerings.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
       </nav>
     </header>
 
+    <!-- ABOUT CONTENT (same as before, omitted for brevity) -->
     <!-- ABOUT -->
     <section class="section-about" data-aos="fade-up">
       <h1>About Spark Digital Solutions</h1>
@@ -465,7 +461,7 @@
       </div>
     </footer>
 
-    <!-- AOS Script -->
+    <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({ duration: 800 });
