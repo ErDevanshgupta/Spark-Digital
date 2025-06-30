@@ -7,14 +7,13 @@ body {
 
 /* Navbar */
 .navbar {
-  background: linear-gradient(90deg, #0f1120, #0652e9);
   color: white;
   padding: 0.8rem 1.5rem;
   position: sticky;
   top: 0;
   z-index: 1000;
- 
-  
+  background-color: #0f1120 !important;
+  background-image: none !important;
 }
 
 .nav-container {
@@ -134,7 +133,7 @@ body {
 }
 
 /* Hero Section */
-.hero {
+/* .hero {
   background: linear-gradient(90deg, #0f1120, #0652e9);
   color: white;
   text-align: center;
@@ -144,7 +143,64 @@ body {
 .hero h1 {
   font-size: 2.5em;
   margin-bottom: 10px;
-}
+} */
+    /* Hero Section Styles */
+    .hero {
+      background-image: url('assets/hero-background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 80px 20px;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(15, 17, 32, 0.75);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 600px;
+      color: #ffffff;
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    .hero-content h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      color: #62e1e9;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #cccccc;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #62e1e9;
+      color: #0f1120;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #4dd0d8;
+    }
 
 .slogan {
   font-size: 1.3em;
